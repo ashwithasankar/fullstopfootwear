@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* Color tokens: ONLY 3 CORE ROLES */
+    --color-obsidian: #111111;
+    --color-ivory: #F5F1E8;
+    --color-gold: #C8A96B;
+
+    /* Light Theme Tokens */
+    --bg-main: #F5F1E8;
+    --text-primary: #111111;
+    --text-muted: #666055;
+    --surface: #EFE8DC;
+    --surface-hover: #E7DFD0;
+    --surface-elevated: #FAF6EF;
+    --border-subtle: #DFD7C7;
+    --border-strong: #C4B9A3;
+    --accent: #C8A96B;
+    --accent-subtle: rgba(200, 169, 107, 0.16);
+    --accent-border: rgba(200, 169, 107, 0.4);
+    --badge-bg: #E4DCCB;
+
+    --font-serif: 'DM Serif Display', 'Noto Serif Tamil', Georgia, serif;
+    --font-sans: 'Manrope', 'Noto Serif Tamil', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  [data-theme="dark"] {
+    /* Dark Theme Tokens */
+    --bg-main: #111111;
+    --text-primary: #F5F1E8;
+    --text-muted: #9E998E;
+    --surface: #181715;
+    --surface-hover: #211F1C;
+    --surface-elevated: #24221E;
+    --border-subtle: #2A2723;
+    --border-strong: #3D3933;
+    --accent: #C8A96B;
+    --accent-subtle: rgba(200, 169, 107, 0.14);
+    --accent-border: rgba(200, 169, 107, 0.35);
+    --badge-bg: #22201C;
+  }
+
+  html {
+    font-family: var(--font-sans);
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    min-height: 100vh;
+    overflow-x: hidden;
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+}
+
+.font-editorial {
+  font-family: var(--font-serif);
+}
+
+.font-ui {
+  font-family: var(--font-sans);
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-main);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+/* Accessible focus ring */
+.focus-ring {
+  outline: none;
+}
+.focus-ring:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

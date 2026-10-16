@@ -1,0 +1,6 @@
+{
+  "name": "FULLSTOP SHOE MALL — Footwear Wholesaler",
+  "description": "A sophisticated, high-end footwear boutique experience featuring handcrafted luxury shoes, collapsible left navigation, WhatsApp ordering, and bilingual English & Tamil support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
