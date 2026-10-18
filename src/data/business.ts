@@ -22,7 +22,7 @@ export const businessData: BusinessConfig = {
     lat: 10.7905,
     lng: 78.7047,
   },
-  directionsUrl: 'https://www.google.com/maps/search/?api=1&query=Fullstop+Shoe+Mall%2C+Vayalur+Road%2C+near+Bishop+Heber+College%2C+Puthur%2C+Tiruchirappalli+620017',
+  directionsUrl: 'https://www.google.com/maps/dir/10.4246669,79.3256785/FULLSTOP+SHOE+CORNER,+No+11,+main+road,+Palakarai,+Sangillyandapuram,+Tiruchirappalli,+Tamil+Nadu+620008/@10.6198713,78.8464684,11z/data=!4m10!4m9!1m1!4e1!1m5!1m1!1s0x3baaf5facb28931d:0x8a2cdb14e4925e78!2m2!1d78.6960759!2d10.8105001!3e0?entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D',
   currency: '₹',
   currencyCode: 'INR',
 };
